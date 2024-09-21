@@ -1,0 +1,152 @@
+@import "themes/amber.css";
+@import "themes/blue.css";
+@import "themes/cyan.css";
+@import "themes/emerald.css";
+@import "themes/fuchsia.css";
+@import "themes/gray.css";
+@import "themes/green.css";
+@import "themes/indigo.css";
+@import "themes/lime.css";
+@import "themes/neutral.css";
+@import "themes/orange.css";
+@import "themes/pink.css";
+@import "themes/purple.css";
+@import "themes/red.css";
+@import "themes/rose.css";
+@import "themes/sky.css";
+@import "themes/slate.css";
+@import "themes/stone.css";
+@import "themes/teal.css";
+@import "themes/violet.css";
+@import "themes/yellow.css";
+@import "themes/zinc.css";
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  min-height: 100vh;
+  font-family: var(--custom-font), sans-serif;
+}
+
+.tiptap {
+  outline: none;
+}
+
+.tiptap p {
+  @apply text-sm [&:not(:first-child)]:mt-4;
+}
+
+.tiptap h1 {
+  @apply text-3xl font-extrabold tracking-tight;
+}
+
+.tiptap h2 {
+  @apply text-2xl font-bold tracking-tight;
+}
+
+.tiptap h3 {
+  @apply text-xl font-semibold tracking-tight;
+}
+
+.tiptap h4 {
+  @apply text-lg font-medium tracking-tight;
+}
+
+.tiptap blockquote {
+  @apply border-l-2 pl-6 italic [&:not(:first-child)]:mt-4;
+}
+
+.tiptap ul {
+  @apply ml-6 list-disc [&:not(:first-child)]:my-4;
+}
+
+.tiptap ol {
+  @apply ml-6 list-decimal [&:not(:first-child)]:my-4;
+}
+
+.tiptap code {
+  @apply inline-flex rounded bg-muted px-[0.3rem] py-[0.2rem] font-mono text-sm font-semibold;
+}
+
+.tiptap p.is-editor-empty::before {
+  @apply pointer-events-none float-left h-0 text-sm text-muted-foreground content-[attr(data-placeholder)];
+}
+
+@layer base {
+  :root {
+    --from: 240 66% 65%;
+    --via: 240 100% 64%;
+    --to: 240 100% 54%;
+    --background: 0 0% 100%;
+    --foreground: 240 10% 3.9%;
+    --card: 0 0% 100%;
+    --card-foreground: 240 10% 3.9%;
+    --popover: 0 0% 100%;
+    --popover-foreground: 240 10% 3.9%;
+    --primary: 240 5.9% 10%;
+    --primary-foreground: 0 0% 98%;
+    --secondary: 240 4.8% 95.9%;
+    --secondary-foreground: 240 5.9% 10%;
+    --muted: 240 4.8% 95.9%;
+    --muted-foreground: 240 3.8% 46.1%;
+    --accent: 240 4.8% 95.9%;
+    --accent-foreground: 240 5.9% 10%;
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 0 0% 98%;
+    --border: 240 5.9% 90%;
+    --input: 240 5.9% 90%;
+    --ring: 240 10% 3.9%;
+    --radius: 0.5rem;
+  }
+
+  .dark {
+    --from: 240 66% 65%;
+    --via: 240 100% 64%;
+    --to: 240 100% 54%;
+    --background: 240 10% 3.9%;
+    --foreground: 0 0% 98%;
+    --card: 240 10% 3.9%;
+    --card-foreground: 0 0% 98%;
+    --popover: 240 10% 3.9%;
+    --popover-foreground: 0 0% 98%;
+    --primary: 0 0% 98%;
+    --primary-foreground: 240 5.9% 10%;
+    --secondary: 240 3.7% 15.9%;
+    --secondary-foreground: 0 0% 98%;
+    --muted: 240 3.7% 15.9%;
+    --muted-foreground: 240 5% 64.9%;
+    --accent: 240 3.7% 15.9%;
+    --accent-foreground: 0 0% 98%;
+    --destructive: 0 62.8% 30.6%;
+    --destructive-foreground: 0 0% 98%;
+    --border: 240 3.7% 15.9%;
+    --input: 240 3.7% 15.9%;
+    --ring: 240 4.9% 83.9%;
+    --radius: 0.5rem;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground;
+  }
+}
+
+@layer utilities {
+  .custom-scrollbar {
+    @apply [&::-webkit-scrollbar-thumb]:min-h-10 [&::-webkit-scrollbar-thumb]:cursor-default [&::-webkit-scrollbar-thumb]:rounded-full [&::-webkit-scrollbar-thumb]:bg-border [&::-webkit-scrollbar-track]:bg-transparent [&::-webkit-scrollbar]:w-1.5;
+  }
+
+  .underline-animation {
+    @apply after:absolute after:bottom-0 after:left-0 after:h-[1px] after:w-0 after:bg-muted-foreground after:transition-all after:duration-500 hover:after:w-full;
+  }
+
+  .bg-special {
+    @apply bg-[linear-gradient(90deg,theme(colors.from),theme(colors.via),theme(colors.to))];
+  }
+}

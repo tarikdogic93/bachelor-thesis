@@ -1,0 +1,49 @@
+.theme-emerald.light {
+  --from: 160 84% 39%;
+  --via: 160 55% 34%;
+  --to: 160 34% 25%;
+  --background: 0 0% 100%;
+  --foreground: 165.7 91.3% 9%;
+  --card: 0 0% 100%;
+  --card-foreground: 165.7 91.3% 9%;
+  --popover: 0 0% 100%;
+  --popover-foreground: 165.7 91.3% 9%;
+  --primary: 164.2 85.7% 16.5%;
+  --primary-foreground: 151.8 81% 95.9%;
+  --secondary: 149.3 80.4% 90%;
+  --secondary-foreground: 164.2 85.7% 16.5%;
+  --muted: 149.3 80.4% 90%;
+  --muted-foreground: 160.1 84.1% 39.4%;
+  --accent: 149.3 80.4% 90%;
+  --accent-foreground: 164.2 85.7% 16.5%;
+  --destructive: 0 84.2% 60.2%;
+  --destructive-foreground: 151.8 81% 95.9%;
+  --border: 152.4 76% 80.4%;
+  --input: 152.4 76% 80.4%;
+  --ring: 165.7 91.3% 9%;
+}
+
+.theme-emerald.dark {
+  --from: 160 84% 39%;
+  --via: 160 55% 34%;
+  --to: 160 34% 25%;
+  --background: 165.7 91.3% 9%;
+  --foreground: 151.8 81% 95.9%;
+  --card: 165.7 91.3% 9%;
+  --card-foreground: 151.8 81% 95.9%;
+  --popover: 165.7 91.3% 9%;
+  --popover-foreground: 151.8 81% 95.9%;
+  --primary: 151.8 81% 95.9%;
+  --primary-foreground: 164.2 85.7% 16.5%;
+  --secondary: 163.1 88.1% 19.8%;
+  --secondary-foreground: 151.8 81% 95.9%;
+  --muted: 163.1 88.1% 19.8%;
+  --muted-foreground: 158.1 64.4% 51.6%;
+  --accent: 163.1 88.1% 19.8%;
+  --accent-foreground: 151.8 81% 95.9%;
+  --destructive: 0 62.8% 30.6%;
+  --destructive-foreground: 151.8 81% 95.9%;
+  --border: 163.1 88.1% 19.8%;
+  --input: 163.1 88.1% 19.8%;
+  --ring: 156.2 71.6% 66.9%;
+}

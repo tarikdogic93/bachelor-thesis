@@ -1,0 +1,49 @@
+.theme-fuchsia.light {
+  --from: 292 84% 61%;
+  --via: 292 42% 55%;
+  --to: 292 18% 46%;
+  --background: 0 0% 100%;
+  --foreground: 296.8 90.2% 16.1%;
+  --card: 0 0% 100%;
+  --card-foreground: 296.8 90.2% 16.1%;
+  --popover: 0 0% 100%;
+  --popover-foreground: 296.8 90.2% 16.1%;
+  --primary: 296.7 63.6% 28%;
+  --primary-foreground: 289.1 100% 97.8%;
+  --secondary: 287 100% 95.5%;
+  --secondary-foreground: 296.7 63.6% 28%;
+  --muted: 287 100% 95.5%;
+  --muted-foreground: 292.2 84.1% 60.6%;
+  --accent: 287 100% 95.5%;
+  --accent-foreground: 296.7 63.6% 28%;
+  --destructive: 0 84.2% 60.2%;
+  --destructive-foreground: 289.1 100% 97.8%;
+  --border: 288.3 95.8% 90.6%;
+  --input: 288.3 95.8% 90.6%;
+  --ring: 296.8 90.2% 16.1%;
+}
+
+.theme-fuchsia.dark {
+  --from: 292 84% 61%;
+  --via: 292 42% 55%;
+  --to: 292 18% 46%;
+  --background: 296.8 90.2% 16.1%;
+  --foreground: 289.1 100% 97.8%;
+  --card: 296.8 90.2% 16.1%;
+  --card-foreground: 289.1 100% 97.8%;
+  --popover: 296.8 90.2% 16.1%;
+  --popover-foreground: 289.1 100% 97.8%;
+  --primary: 289.1 100% 97.8%;
+  --primary-foreground: 296.7 63.6% 28%;
+  --secondary: 295.4 70.2% 32.9%;
+  --secondary-foreground: 289.1 100% 97.8%;
+  --muted: 295.4 70.2% 32.9%;
+  --muted-foreground: 292 91.4% 72.5%;
+  --accent: 295.4 70.2% 32.9%;
+  --accent-foreground: 289.1 100% 97.8%;
+  --destructive: 0 62.8% 30.6%;
+  --destructive-foreground: 289.1 100% 97.8%;
+  --border: 295.4 70.2% 32.9%;
+  --input: 295.4 70.2% 32.9%;
+  --ring: 291.1 93.1% 82.9%;
+}
